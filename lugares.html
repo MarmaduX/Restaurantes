@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="imagenes/icono-restaurante-300x300.png" type="image/ico">
+    <!-- Bootstrap CSS -->
+	<!-- build:css dist/lugares.css -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+	<!-- endbuild -->
+    <title>Contacto</title>
+  </head>
+  <body>
+  	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  		<a class="navbar-brand" href="index.html">Restaurantes</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+      			<a class="nav-item nav-link" href="index.html"><span class="oi oi-home iconos-de-barra"></span>Home</a>
+    		  	<a class="nav-item nav-link" href="about.html"><span class="oi oi-info iconos-de-barra"></span>Nosotros</a>
+      			<a class="nav-item nav-link" href="platos.html"><span class="oi oi-target iconos-de-barra"></span>Platos</a>
+    		  	<a class="nav-item nav-link" href="maps.html"><span class="oi oi-map iconos-de-barra"></span>Mapa</a>
+    		  	<a class="nav-item nav-link active" href="#"><span class="oi oi-envelope-closed iconos-de-barra"></span>Contactanos</a>
+  	  		</div>
+  		</div>
+  	</nav>
+  		
+    <div class="jumbotron">
+    	<h1>Restaurantes de mi Ciudad</h1>
+  	</div>
+  	
+  	<div class="container"> 
+  		<nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  				<li class="breadcrumb-item"><a	href="index.html">Home</a></li>
+  				<li class="breadcrumb-item active" aria-current="page">Contacto</li>
+  			</ol>
+  		</nav>
+  		<section class="section pb-5">
+			<h2 class="section-heading h1 pt-4">Contactanos</h2>
+			<p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+		    amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+		    pariatur accusamus veniam.</p>
+		  	<div class="row">
+				<div class="col-lg-5 mb-4">
+		  			<div class="card">
+	      				<div class="card-body">
+			            		<form>
+			            			<div class="form-header blue accent-1">
+            							<h3><i class="fas fa-envelope"></i>Escribenos:</h3>
+          							</div>
+          							<p>Solemos responder muy raramente, pero envianos un comentario.</p>
+          							<br>
+			            			<div class="form-group formulario">
+			            				<label for="nombre">Nombre Completo</label>
+			            				<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+			            			</div>
+			            			<div class="form-group formulario">
+			            				<label for="genero">Genero</label>
+			            				<select class="form-control" id="genero">
+			            					<option>Otro</option>
+			            					<option>Hombre</option>
+			            					<option>Mujer</option>
+			            				</select>
+			            			</div>
+			            			<div class="form-group formulario">
+			            				<label for="email">Email</label>
+			            				<input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+			            			</div>
+			            			<div class="form-group formulario">
+			            				<label for="domicilio">Domicilio</label>
+			            				<input class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+			            			</div>
+			            			<div class="form-group formulario">
+			            				<label for="comentario">Comentario</label>
+			            				<textarea class="form-control" id="comentario" rows="3" placeholder="Ingrese un comentario"></textarea>
+			            			</div>
+			            			<div class="form-group">
+			            				<div class="form-check">
+			            					<input class="form-check-input" type="checkbox" id="gridcheck">
+			            					<label for="nombre">Quiero recibir una respuesta.</label>		
+			            				</div>	            			
+			            			</div>
+			            			<div class="text-center mt-4">
+            							<button class="btn btn-light-blue btn-reserva">Enviar</button>
+         							</div>
+			            		</form>	          		
+						</div>
+		      		</div>
+				</div>
+				<div class="col-lg-7">
+					<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+		    			<iframe src="https://maps.google.com/maps?q=paysandu&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0"></iframe>
+		   			</div>
+				</div>
+			</div>
+		</section>
+  	</div>
+	
+	<footer class="footer">
+		<div class="row">
+			<div class="col-sm-4 d-flex flex-column">
+				<a href="https://www.facebook.com/">Facebook</a>
+				<br>
+				<a href="https://www.instagram.com/">Instagram</a>
+				<br>
+				<a href="https://www.twitter.com/">Twitter</a>
+				<br>
+				<a href="https://www.reddit.com/">Reddit</a>
+			</div>
+			<div class="col-sm-4 align-items-center">
+				<address>
+					<p class="text-center text-lugar">Oficina Central</p>		
+					<p><span class="oi oi-map-marker footer-addres-icon"></span>Paysandú 18 de julio 1152, Paysandu, Uruguay</p>
+					<p><span class="oi oi-phone footer-addres-icon"></span> 4723 2412 - 4724 3452 </p>
+					<p><span class="oi oi-envelope-open footer-addres-icon"></span> correoelectronico@restaurantes.com</p>				
+				</address>
+			</div>
+			<div class="col-sm-4 d-flex flex-column align-items-end">
+				<br>
+				<a href="lugares.html">Contactanos</a>
+				<br>
+				<a href="#">Terminos y Condiciones</a>
+				<br>
+				<a href="about.html">Nosotros</a>
+			</div>
+		</div>
+	</footer>
+	<!-- build:js dist/lugares.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+	<!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="imagenes/icono-restaurante-300x300.png" type="image/ico">
+    <!-- Bootstrap CSS -->
+	<!-- build:css dist/index.css -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+	<!-- endbuild -->
+    <title>Home</title>
+  </head>
+  <body>
+  	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  		<a class="navbar-brand" href="index.html">Restaurantes</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+      			<a class="nav-item nav-link active" href="#"><span class="oi oi-home iconos-de-barra"></span>Home</a>
+    		  	<a class="nav-item nav-link" href="about.html"><span class="oi oi-info iconos-de-barra"></span>Nosotros</a>
+      			<a class="nav-item nav-link" href="platos.html"><span class="oi oi-target iconos-de-barra"></span>Platos</a>
+    		  	<a class="nav-item nav-link" href="maps.html"><span class="oi oi-map iconos-de-barra"></span>Mapa</a>
+    		  	<a class="nav-item nav-link" href="lugares.html"><span class="oi oi-envelope-closed iconos-de-barra"></span>Contactanos</a>
+  	  		</div>
+  		</div>
+  	</nav>
+  		
+    <div class="jumbotron">
+    	<h1>Restaurantes de mi Ciudad</h1>
+  	</div>
+  	<div class="container"> 	
+  		<nav aria-label="breadcrumb ">
+  			<ol class="breadcrumb">
+  				<li class="breadcrumb-item"><a>Home</a></li>
+  			</ol>
+  		</nav>
+  		<div class="d-flex justify-content-around">
+		  <div><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#somos" aria-expanded="false" aria-controls="multiCollapseExample1">¿Quienes somos?</button>
+		  </div>
+		  <div><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funcion" aria-expanded="false" aria-controls="multiCollapseExample2">¿Como funciona?</button>
+		  </div>
+		  <div><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#porque" aria-expanded="false" aria-controls="multiCollapseExample3">¿Por que hacemos esto?</button>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+  			<div class="col-sm-4 collapse multi-collapse" id="somos">
+  				<h3>¿Quienes somos?</h3>
+  				<p class="text-justify">Somos una empresa en donde te recomendamos e informamos sobre las empresas de la ciudad.</p>
+  			</div>
+  			<div class="col-sm-4 collapse multi-collapse" id="funcion">
+  				<h3>¿Como funciona?</h3>
+  				<p class="text-justify">Abajo te dejamos un mini listado de restaurantes de aqui, en los cuales tendran una breve descripcion.</p>
+  			</div>
+  			<div class="col-sm-4 collapse multi-collapse" id="porque">
+  				<h3>¿Por que hacemos esto?</h3>
+  				<p class="text-justify">La verdad que ni idea, espero que no lean esto.</p>
+  			</div>
+  		</div>
+  		<br>
+  		<div id="carouselControls" class="carousel slide" data-ride="carousel">
+  			<div class="carousel-inner">
+  				<div class="carousel-item active">
+	  				<img class="d-block w-100" src="imagenes/PromoTrouville.png" alt="Primer slide">
+  				</div>
+  				<div class="carousel-item">
+	  				<img class="d-block w-100" src="imagenes/PromoPioPio.png" alt="Segundo slide">
+  				</div>
+  				<div class="carousel-item">
+	  				<img class="d-block w-100" src="imagenes/PromoPanZ.png" alt="Tercer slide">
+  				</div>
+  				<div class="carousel-item">
+	  				<img class="d-block w-100" src="imagenes/PromoAnadolu.png" alt="Cuarto slide">
+  				</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+  				<span class="carousel-control-prev-icon flechita" aria-hidden="true"></span>
+  				<span class="sr-only">Anterior</span>
+  			</a>
+  			<a class="carousel-control-next flechita" href="#carouselControls" role="button" data-slide="next">
+  				<span class="carousel-control-next-icon " aria-hidden="true"></span>
+  				<span class="sr-only">Siguiente</span>
+  			</a>
+  		</div>
+  		
+  	    <div class="card-column d-md-flex flex-wrap card-aux">
+  			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body" >
+				  	<img src="imagenes/lakinta.jpg" class="card-img-top img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Cerrado de lunes a Juevez por situacion sanitaria">La Kinta avenida</h5>
+				    	<p class="card-text text-justify">Consumo en el lugar · Para llevar · Entrega sin contacto. <br> Dirección: Pte. Luis Batlle Berres y, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				 </div>
+				 <div><button id="boton1" class="btn btn-reserva" data-toggle="modal" data-target="#contact"><span class="oi oi-paperclip btn-icon"></span>Contacto</button></div>
+			</div>
+  			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body">
+				  	<img src="imagenes/ANADOLU SABORES TURCOS.jpg" class="card-img-botton img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Abierto todos los dias">Anadolu sabores turcos</h5>
+				    	<p class="card-text text-justify">Consumo en el lugar · Pedidos desde el automóvil · Entrega sin contacto.<br>Dirección: Bolivar 875, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				</div>
+				<div><button id="boton2" class="btn btn-reserva" data-toggle="modal" data-target="#contact"><span class="oi oi-paperclip btn-icon"></span>Contacto</button></div>
+			</div>
+			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body">
+				  	<img src="imagenes/pan z.png" class="card-img-top img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Cerrado de lunes a Juevez por situacion sanitaria">Pan Z</h5>
+				    	<p class="card-text text-justify"> Consumo en el lugar · Para llevar · Entrega a domicilio.<br>Dirección: Setembrino Pereda esquina, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				 </div>
+				 <div><button id="boton3" class="btn btn-reserva"><span class="oi oi-cart btn-icon"></span>Pedir Deliveri</button></div>
+			</div>
+			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body">
+				  	<img src="imagenes/pio pio.png" class="card-img-botton img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Cerrado Lunes a Miercoles por situacion sanitaria">Pío Pío</h5>
+				    	<p class="card-text text-justify">Consumo en el lugar · Para llevar · Entrega sin contacto.<br>Dirección: Leandro Gomez 562, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				 </div>
+				 <div><button id="boton4" class="btn btn-reserva" data-toggle="modal" data-target="#contact"><span class="oi oi-paperclip btn-icon"></span>Contacto</button></div>
+			</div>
+			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body">
+				  	<img src="imagenes/cafe del teatro.jpg" class="card-img-top img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Abierto todos los dias">Cafe Del Teatro</h5>
+				    	<p class="card-text text-justify"> Consumo en el lugar · Para llevar.<br>Dirección: 19 De Abril 928, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				 </div>
+				 <div><button  type="button" id="boton5" class="btn btn-reserva" data-toggle="modal" data-target="#contact"  data-toggle="popover" title="Sacate las dudas" data-content="Consulta con la empresa"><span class="oi oi-paperclip btn-icon" ></span>Contacto</button></div>
+			</div>
+			<div class="card mb-4 card-item d-flex flex-column justify-content-between" style="width: 18rem;">
+  				<div class="card-body">
+				  	<img src="imagenes/trouville_logor.jpg" class="card-img-botton img-fluid" alt="restaurante img">
+				  	<div class="card-body">
+				    	<h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Cerrado de lunes a Juevez por situacion sanitaria">Trouville</h5>
+				    	<p class="card-text text-justify">Consumo en el lugar · Para llevar · Entrega sin contacto.<br>Dirección: Calle 18 de Julio 1087, 60000 Paysandú, Departamento de Paysandú.</p>
+				 	</div>
+				 </div>
+				 <div><button type="button" id="boton6" class="btn btn-reserva contactoBTN" data-toggle="modal" data-target="#contact"><span class="oi oi-paperclip btn-icon"></span>Contactate</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="contact" tabindex="-1" aria-labelledby="ejemploModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+		      	<div class="modal-header">
+		        	<h5 class="modal-title" id="ejemploModal">Contáctate con el Restaurante</h5>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        		<span aria-hidden="true">&times;</span>
+		        	</button>
+		      	</div>
+		    	<div class="modal-body">
+		    		<form id="form1">
+		    			<div class="form-group">
+		    				<label for="recient-name" class="col-form-label">Email</label>
+		    				<input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+		    			</div>
+		    			<div class="form-group">
+			            	<label for="comentario">Mensaje</label>
+			            	<textarea class="form-control" id="comentario" placeholder="Ingrese su mensaje"></textarea>
+			            </div>
+		    		</form>
+		    	</div>
+		    	<div class="modal-footer">
+		    		<button type="submit" class="btn btn-success" data-dismiss="modal" 	onclick="myFunction()">Enviar</button>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="row">
+			<div class="col-sm-4 d-flex flex-column">
+				<a href="https://www.facebook.com/">Facebook</a>
+				<br>
+				<a href="https://www.instagram.com/">Instagram</a>
+				<br>
+				<a href="https://www.twitter.com/">Twitter</a>
+				<br>
+				<a href="https://www.reddit.com/">Reddit</a>
+			</div>
+			<div class="col-sm-4 align-items-center">
+				<address>
+					<p class="text-center text-lugar">Oficina Central</p>		
+					<p><span class="oi oi-map-marker footer-addres-icon"></span>Paysandú 18 de julio 1152, Paysandu, Uruguay</p>
+					<p><span class="oi oi-phone footer-addres-icon"></span> 4723 2412 - 4724 3452 </p>
+					<p><span class="oi oi-envelope-open footer-addres-icon"></span> correoelectronico@restaurantes.com</p>				
+				</address>
+			</div>
+			<div class="col-sm-4 d-flex flex-column align-items-end">
+				<br>
+				<a href="lugares.html">Contactanos</a>
+				<br>
+				<a href="#">Terminos y Condiciones</a>
+				<br>
+				<a href="about.html">Nosotros</a>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- build:js dist/index.js -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+	<!-- endbuild -->
+  </body>
+</html>

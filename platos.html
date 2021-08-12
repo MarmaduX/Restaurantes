@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="imagenes/icono-restaurante-300x300.png" type="image/ico">	
+    <!-- Bootstrap CSS -->
+	<!-- build:css dist/platos.css -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+	<!-- endbuild -->
+    <title>Platos</title>
+  </head>
+  <body>
+  	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  		<a class="navbar-brand" href="index.html">Restaurantes</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav">
+      			<a class="nav-item nav-link" href="index.html"><span class="oi oi-home iconos-de-barra"></span>Home</a>
+    		  	<a class="nav-item nav-link" href="about.html"><span class="oi oi-info iconos-de-barra"></span>Nosotros</a>
+      			<a class="nav-item nav-link active" href="#"><span class="oi oi-target iconos-de-barra"></span>Platos</a>
+    		  	<a class="nav-item nav-link" href="maps.html"><span class="oi oi-map iconos-de-barra"></span>Mapa</a>
+    		  	<a class="nav-item nav-link" href="lugares.html"><span class="oi oi-envelope-closed iconos-de-barra"></span>Contactanos</a>
+  	  		</div>
+  		</div>
+  	</nav>
+  		
+    <div class="jumbotron">
+    	<h1>Restaurantes de mi Ciudad</h1>
+  	</div>
+  	
+  	<div class="container"> 
+  		<nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  				<li class="breadcrumb-item"><a href="index.html">Home</a></li>  				
+  				<li class="breadcrumb-item active" aria-current="page">Platillos</li>
+  			</ol>
+  		</nav>
+  		
+  		<ul class="nav nav-pills">
+  			<li class="nav-item">
+  			<a class="nav-link active" id="Menus-tab" data-toggle="pill" href="#menus" role="tab" aria-controls="menus" aria-selected="true">Menús</a></li>
+  			<li class="nav-item">
+  			<a class="nav-link" id="Platos-tab" data-toggle="pill" href="#platos" role="tab" aria-controls="platos" aria-selected="true">Platos</a></li>
+  			<li class="nav-item">
+  			<a class="nav-link" id="Descuentos-tab" data-toggle="pill" href="#descuentos" role="tab" aria-controls="descuentos" aria-selected="true">Descuentos</a></li>
+  		</ul>
+  		<div class="tab-content" id="myTabContent">
+  		  	<div class="tab-pane fade show active" id="menus" role="tabpanel" aria-labelledby="Menus-tab">
+	  		  	<div class="table-responsive">
+			  		<table class="table table-striped">
+			  			<thead class="thead-dark">
+			  				<tr>
+				  				<th class="text-center">Menús</th>
+				  				<th>La Kinta avenida</th>
+				  				<th>Anadolu sabores turcos</th>
+				  				<th>Pan Z</th>
+				  				<th>Pío Pío</th>
+				  				<th>Cafe Del Teatro</th>
+				  				<th>Trouville</th>
+				  			</tr>
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Cocina del Chef (Depende del restaurante)</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Pastas</td>
+				  				<td>No</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Pizzas</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Chivitos</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Frankfurters</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Sandwiches</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Bebidas</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Bebidas con alcohol</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Cafeteria</td>
+				  				<td>No</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>No</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+			  				</tr>
+			  				<tr>
+				  				<td><span class="oi oi-target footer-addres-icon"></span>Dulces</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+				  				<td>Si</td>
+			  				</tr>
+			  			</tbody>
+			  		</table>
+	  			</div>
+	  		</div>
+	  		<div class="tab-pane fade show" id="platos" role="tabpanel" aria-labelledby="Platos-tab">
+	  			<div class="card-column d-md-flex flex-wrap">
+			  		<div class="card mb-3 card-item" style="max-width: 540px;">
+					  	<div class="row no-gutters">
+					    	<div class="d-flex centrar">
+					     	 	<img class="img-fluid" src="imagenes/Plato1.jpg" alt="restaurante img">
+					    	</div>						    	
+					    	<div>
+						      	<div class="card-body"  style="width:100%;">
+						       		<h5 class="card-title  text-center">Pizza Árabe</h5>
+						       		<p class="card-text text-justify" >$235 <br> c/Muzzarella $295</p>
+						       		<p class="card-text"><small>Pizza con carne picada salteada con cebolla, morron, huevo, sala criolla, limon y pimienta negra.</small></p>
+						     		</div>
+						   	</div>
+						 </div>
+					</div>
+					<div class="card mb-3 card-item" style="max-width: 540px;">
+					  	<div class="row no-gutters">
+					    	<div class="centrar d-flex ">
+					     	 	<img class="card-img-botton img-fluid" src="imagenes/Plato2.jpg" alt="restaurante img">
+					    	</div>						    	
+					    	<div>
+						      	<div class="card-body"  style="width:100%;">
+						       		<h5 class="card-title  text-center">Pizza Italiana</h5>
+						       		<p class="card-text text-justify" >$225 <br> c/Muzzarella $275</p>
+						       		<p class="card-text"><small>Pizza con tomate, ajo, jamon y pesto.</small></p>
+						     		</div>
+						   	</div>
+						 </div>
+					</div>
+					<div class="card mb-3 card-item" style="max-width: 540px;">
+					  	<div class="row no-gutters">
+					    	<div class="d-flex centrar">
+					     	 	<img class="card-img-botton img-fluid" src="imagenes/Plato3.jpg" alt="restaurante img">
+					    	</div>						    	
+					    	<div>
+						      	<div class="card-body"  style="width:100%;">
+						       		<h5 class="card-title  text-center">Chivito Canadiense al pan</h5>
+						       		<p class="card-text text-justify" >$415</p>
+						       		<p class="card-text"><small>Chivito de carne o pollo con lechuga, tomate, jamon, muzzarella, panceta, morron, aceitunas, mayonesa, huevo duro y papas fritas.</small></p>
+						     		</div>
+						   	</div>
+						 </div>
+					</div>
+					<div class="card mb-3 card-item" style="max-width: 540px;">
+					  	<div class="row no-gutters">
+					    	<div class="centrar d-flex">
+					     	 	<img class="card-img-botton img-fluid" src="imagenes/Plato4.jpg" alt="restaurante img">
+					    	</div>						    	
+					    	<div>
+						      	<div class="card-body"  style="width:100%;">
+						       		<h5 class="card-title  text-center">Chivito Canadiense al plato</h5>
+						       		<p class="card-text text-justify" >$435</p>
+						       		<p class="card-text"><small>Chivito de carne vacuna o pollo con lechuga, tomate, jamon, muzzarella, panceta, morron, aceitunas, mayonesa, huevo frito y papas fritas.</small></p>
+						     		</div>
+						   	</div>
+						 </div>
+					</div>
+					<div class="card mb-3 card-item" style="max-width: 540px;">
+					  	<div class="row no-gutters">
+					    	<div class="d-flex centrar">
+					     	 	<img class="card-img-botton img-fluid " src="imagenes/Plato5.jpg" alt="restaurante img">
+					    	</div>						    	
+					    	<div>
+						      	<div class="card-body">
+						       		<h5 class="card-title  text-center">Pancho Tejano</h5>
+						       		<p class="card-text text-justify" >$375</p>
+						       		<p class="card-text"><small>3 Panchos con muzzarella, morron, aceitunas, panceta, huevo frito, jamon y fritas</small></p>
+						     		</div>
+						   	</div>
+						 </div>
+					</div>
+	  			</div>
+	  		</div>
+	  		<div class="tab-pane fade show" id="descuentos" role="tabpanel" aria-labelledby="Descuentos-tab">
+	  			<div class="accordion" id="accordianTarjetas">
+	  				<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+	  				<li class="card">
+						<div class="card-header">
+					      	<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseOne">
+					        	Scotiabank
+					      	</a>
+					    </div>	
+					    <div id="collapseUno" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+					      	<div class="card-body">
+					        	<strong>20% de Descuento en Trouville, 10% de Descuento en La Kinta Avenida</strong>
+					      	</div>
+					    </div>
+					</li>
+					<li class="card">
+						<div class="card-header">
+					      	<a class="nav-link collapsed"  href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					        	BROU (Banco República)
+					      	</a>
+					    </div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"data-parent="#accordionSidebar">
+					      	<div class="card-body">
+					        	<strong>15% de Descuento en Trouville, 15% de Descuento en La Kinta Avenida</strong>
+					      	</div>
+					    </div>
+					</li>
+					<li class="card">
+						<div class="card-header">
+					      	<a  href="#" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					       		Banco Itaú
+					      	</a>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+					      	<div class="card-body">
+					        	<strong>10% de Descuento en Trouville, 20% de Descuento en La Kinta Avenida</strong>
+					     	</div>
+					    </div>
+					</li>
+					</ul>
+				</div>
+	  		</div>
+  		</div>
+  	</div>	
+	<footer class="footer">
+		<div class="row">
+			<div class="col-sm-4 d-flex flex-column">
+				<a href="https://www.facebook.com/">Facebook</a>
+				<br>
+				<a href="https://www.instagram.com/">Instagram</a>
+				<br>
+				<a href="https://www.twitter.com/">Twitter</a>
+				<br>
+				<a href="https://www.reddit.com/">Reddit</a>
+			</div>
+			<div class="col-sm-4 align-items-center">
+				<address>
+					<p class="text-center text-lugar">Oficina Central</p>		
+					<p><span class="oi oi-map-marker footer-addres-icon"></span>Paysandú 18 de julio 1152, Paysandu, Uruguay</p>
+					<p><span class="oi oi-phone footer-addres-icon"></span> 4723 2412 - 4724 3452 </p>
+					<p><span class="oi oi-envelope-open footer-addres-icon"></span> correoelectronico@restaurantes.com</p>				
+				</address>
+			</div>
+			<div class="col-sm-4 d-flex flex-column align-items-end">
+				<br>
+				<a href="lugares.html">Contactanos</a>
+				<br>
+				<a href="#">Terminos y Condiciones</a>
+				<br>
+				<a href="about.html">Nosotros</a>
+			</div>
+		</div>
+	</footer>
+	<!-- build:js dist/platos.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+	<!-- endbuild -->
+    
+  </body>
+</html>

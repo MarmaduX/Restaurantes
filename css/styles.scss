@@ -1,0 +1,138 @@
+$yellow: #00ff00;
+$black: #000000;
+$rojo:#ff0000;
+$verde:#00ff00;
+$texto: #ffffff;
+$botoncolor: #0000ff;
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin todo($top, $bottom, $right, $left, $color, $bkgrColor) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    padding-right:  $right;
+    padding-left: $left;
+    color: $color;
+    background-color: $bkgrColor;
+}
+.jumbotron{
+	background-color: $black;
+	@include margenes(50px, 30px);	
+	color: $yellow;
+	background-image: url("../imagenes/restaurante.jpg");
+ 	background-size: cover;
+}
+
+.card-img-top{
+	max-width: 100%; 
+}
+
+
+.centrar{
+	vertical-align: middle;
+	margin: 10px;
+}
+.card-item {
+    flex: 1 30%;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.btn-reserva{
+	background-color: $botoncolor;
+	color: $texto;		
+	width: 100%;
+	border-radius:0px;
+}
+.text-lugar{
+	font-size: 20px;
+}
+.sangria{
+	 text-indent: 50px;
+}
+.btn-icon{
+	padding: 0px 10px 0px 0px;
+}
+
+@media screen and (max-width: 576px) {
+    .foot-sm {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+    }
+    .card {
+        width: 100%;
+    }
+}
+.footer{
+	padding: 10px 10px 0px 10px;
+	background-color: $black;
+	color: $texto;
+	@include margenes(30px, 0px );
+  	$bottom: 0;
+}
+
+.footer-links-icon{
+	padding: 0px 0px 0px 20px;
+	color: $texto;
+}
+.producto{
+	height:100%;
+	width:100%;
+}
+
+.footer-addres-icon{
+	padding: 10px;	
+}
+
+.map-container{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+.formulario{
+	height:100%;
+	width:100%;
+	
+	position:relative;
+}
+
+.map-container-6{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+
+.map-container-6 iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+.iconos-de-barra{
+	padding: 0px 5px 0px 0px;	
+}
+.nav-pills{
+    padding-bottom: 10px;
+}
+
+.card-aux{
+	padding-top: 10px ;
+}
+
+.flechita{
+	color:black;	
+}
