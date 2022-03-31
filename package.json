@@ -17,7 +17,7 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "clean": "rimraf dist",
     "imagemin": "imagemin imagenes/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true && usemin about.html -d dist --htmlmin -o dist/about.html && usemin maps.html -d dist --htmlmin -o dist/maps.html && usemin lugares.html -d dist --htmlmin -o dist/lugares.html && usemin platos.html -d dist --htmlmin -o dist/platos.html",
+    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true && usemin about.html -d dist -o dist/about.html --htmlmin true && usemin maps.html -d dist -o dist/maps.html --htmlmin true && usemin lugares.html -d dist -o dist/lugares.html --htmlmin true&& usemin platos.html -d dist -o dist/platos.html --htmlmin true",
     "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
