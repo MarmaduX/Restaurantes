@@ -7,6 +7,8 @@
   },
   "description": "Tarea Entregable",
   "main": "index.html",
+  "type": "module",
+  "module": "commonjs",
   "scripts": {
     "dev": "lite-server",
     "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
@@ -55,6 +57,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp-usemin": "^0.3.30",
     "htmlmin": "^0.0.7",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
