@@ -2,7 +2,7 @@
 .jumbotron{
 	background-color: black;
 	margin-top: 50px;	
-	color: rgb(42, 255, 0);
+	color: rgb(255, 0, 0);
 	background-image: url("../imagenes/restaurante.jpg");
  	background-size: cover;
 }
