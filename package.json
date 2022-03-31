@@ -1,6 +1,9 @@
 {
   "name": "restaurante",
   "version": "1.0.0",
+  "engines": {
+    "npm": "6.x"
+  },
   "description": "Tarea Entregable",
   "main": "index.html",
   "scripts": {
